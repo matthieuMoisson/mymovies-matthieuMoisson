@@ -1,6 +1,6 @@
 # MyMovies
 
-Projet Web pour le module ISI1-WEB de Polytech Lyon.
+Projet Web pour le module ISI1-WEB.
 
 ## Consignes d'installation
 
