@@ -1,0 +1,233 @@
+<!doctype html>
+<html>
+    <head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
+		<title>MyMovies</title>    
+    </head>
+    <body>
+		<div class="navbar navbar-default" role="navigation">
+			<div class="container">
+				<!-- Partie de la barre toujours affichée -->
+				<div class="navbar-header">
+					<!-- Bouton d'accès affiché à droite si la zone d'affichage est trop petite -->
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-target">
+						<span class="sr-only">Activer la navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="index2.html">
+						<span class="glyphicon glyphicon-film"></span>
+						MyMovies
+					</a>
+				</div>				
+				<!-- Partie de la barre masquée si la surface d'affichage est insuffisante -->
+				<div class="collapse navbar-collapse" id="navbar-collapse-target">
+					<ul class="nav navbar-nav">
+						<li><a href="#">Ajouter un film</a></li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li>
+							<a href="#">
+								<span class="glyphicon glyphicon-cog"></span>
+								Administration
+							</a>
+						</li>
+						<li class="dropdown">
+						  <a href="#" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+							<span class="glyphicon glyphicon-user"></span>
+							Bienvenue, Matthieu
+							<span class="caret"></span>
+						  </a>
+						  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+							<li><a href="#">Profil</a></li>
+							<li><a href="#">Quiter</a></li>
+						  </ul>
+						</li>
+						
+					</ul>
+				</div>
+			</div>
+		</div>
+		<h1 class="Titre_admin">
+			Administration
+		</h1>
+	
+	
+		<div class="container">
+		<div class="col-md-3"></div>
+			<div class="col-md-6">
+				<ul class="nav nav-tabs nav-justified">
+					<li class="active"><a data-toggle="tab" href="#films">Films</a></li>
+					<li><a data-toggle="tab" href="#Utilisateurs">Utilisateurs</a></li>
+				</ul>
+			</div>
+		<div class="col-md-3"></div>
+			<div class="tab-content">
+				<div id="films" class="tab-pane fade in active">
+					<table class="table table-hover">
+						<thead>
+							<tr>
+								<th>Titre</th>
+								<th>Réalisateur</th>
+								<th>Année de sortie</th>
+								<th>Actions</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td><a href="hatchi.html">Hatchi</a></td>
+								<td>Lasse Hallström</td>
+								<td>2009</td>
+								<td>
+									<button type="button" class="btn btn-xs btn-primary">
+										<span class="glyphicon glyphicon-edit" aria-hidden="true"></span>
+									</button>
+									<button type="button" class="btn btn-xs btn-danger">
+										<span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+									</button>
+								</td>
+							</tr>
+							<tr>
+								<td><a href="belle_et_sebastien.html">Belle et sebastien</a></td>
+								<td>Nicolas Vanier</td>
+								<td>2013</td>
+								<td>
+									<button type="button" class="btn btn-xs btn-primary">
+										<span class="glyphicon glyphicon-edit" aria-hidden="true"></span>
+									</button>
+									<button type="button" class="btn btn-xs btn-danger">
+										<span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+									</button>
+								</td>
+							</tr>
+							<tr>
+								<td><a href="vice_versa.html">Vice versa</a></td>
+								<td>Pete Docter</td>
+								<td>2015</td>
+								<td>
+									<button type="button" class="btn btn-xs btn-primary">
+										<span class="glyphicon glyphicon-edit" aria-hidden="true"></span>
+									</button>
+									<button type="button" class="btn btn-xs btn-danger">
+										<span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+									</button>
+								</td>
+							</tr>
+							<tr>
+								<td><a href="la_reine_des_neiges.html">La reine des neiges</a></td>
+								<td>Chris Buck</td>
+								<td>2013</td>
+								<td>
+									<button type="button" class="btn btn-xs btn-primary">
+										<span class="glyphicon glyphicon-edit" aria-hidden="true"></span>
+									</button>
+									<button type="button" class="btn btn-xs btn-danger">
+										<span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+									</button>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div id="Utilisateurs" class="tab-pane fade">
+					<div id="films" class="tab-pane fade in active">
+						<table class="table table-hover">
+							<thead>
+								<tr>
+									<th>Nom</th>
+									<th>Prénom</th>
+									<th>Login</th>
+									<th>Actions</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Hallström</td>
+									<td>Lasse</td>
+									<td>xxxxx</td>
+									<td>
+										<button type="button" class="btn btn-xs btn-primary">
+											<span class="glyphicon glyphicon-edit" aria-hidden="true"></span>
+										</button>
+										<button type="button" class="btn btn-xs btn-danger">
+											<span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+										</button>
+									</td>
+								</tr>
+								<tr>
+									<td>Vanier</td>
+									<td>Nicolas</td>
+									<td>xxxxx</td>
+									<td>
+										<button type="button" class="btn btn-xs btn-primary">
+											<span class="glyphicon glyphicon-edit" aria-hidden="true"></span>
+										</button>
+										<button type="button" class="btn btn-xs btn-danger">
+											<span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+										</button>
+									</td>
+								</tr>
+								<tr>
+									<td>Docter</td>
+									<td>Pete</td>
+									<td>xxxxx</td>
+									<td>
+										<button type="button" class="btn btn-xs btn-primary">
+											<span class="glyphicon glyphicon-edit" aria-hidden="true"></span>
+										</button>
+										<button type="button" class="btn btn-xs btn-danger">
+											<span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+										</button>
+									</td>
+								</tr>
+								<tr>
+									<td>Buck</td>
+									<td>Chris</td>
+									<td>xxxxx</td>
+									<td>
+										<button type="button" class="btn btn-xs btn-primary">
+											<span class="glyphicon glyphicon-edit" aria-hidden="true"></span>
+										</button>
+										<button type="button" class="btn btn-xs btn-danger">
+											<span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+										</button>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+			
+		<br/> <br/>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-2"></div>
+				<div class="Partie_bah col-md-8">
+					<p>
+						réalisé avec <span class="glyphicon glyphicon-heart"></span>par <strong>Matthieu MOISSON</strong>
+					</p>
+				</div>
+				<div class="col-md-2"></div>
+			</div>
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="lib/bootstrap/js/bootstrap.min.js"></script>
+    </body>
+</html>
+

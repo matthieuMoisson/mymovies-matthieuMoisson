@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+    <head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
+		<title>MyMovies</title>    
+    </head>
+    <body>
+		
+		<div class="navbar navbar-default" role="navigation">
+			<div class="container">
+				<!-- Partie de la barre toujours affichée -->
+				<div class="navbar-header">
+					<!-- Bouton d'accès affiché à droite si la zone d'affichage est trop petite -->
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-target">
+						<span class="sr-only">Activer la navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="index2.html">
+						<span class="glyphicon glyphicon-film"></span>
+						MyMovies
+					</a>
+				</div>				
+				<!-- Partie de la barre masquée si la surface d'affichage est insuffisante -->
+				<div class="collapse navbar-collapse" id="navbar-collapse-target">
+					<ul class="nav navbar-nav">
+						<li><a href="#">Ajouter un film</a></li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li>
+							<a href="administration.html">
+								<span class="glyphicon glyphicon-cog"></span>
+								Administration
+							</a>
+						</li>
+						<li class="dropdown">
+						  <a href="#" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+							<span class="glyphicon glyphicon-user"></span>
+							Bienvenue, Matthieu
+							<span class="caret"></span>
+						  </a>
+						  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+							<li><a href="#">Profil</a></li>
+							<li><a href="#">Quiter</a></li>
+						  </ul>
+						</li>
+						
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+		<div class="container">
+			<div class="jumbotron">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6">
+							<a href="#">
+								<img class="image_film" src="images/hatchi.jpg" alt="Image flottante" /> 
+							</a>
+						</div>
+						<div class="col-md-6">
+						<h1>
+							Hatchi
+						</h1>
+						<p>
+							Pour Parker, professeur de musique à l'université, l'arrivée du chien Hatchi dans 
+							la famille fut un heureux événement. L'animal prit sa place auprès de chacun, mais 
+							c'est avec Parker qu'il passait le plus de temps. Chaque matin, le chien accompagnait 
+							son maître à la gare où il prenait son train, et chaque soir, l'animal venait l'y 
+							attendre. Cet attendrissant rituel rythmait la vie de tous ceux qui en étaient 
+							témoins... jusqu'au jour tragique où Parker ne revint pas. Hatchi continua à l'attendre. 
+							Il l'attendit chaque jour, jusqu'à la fin. À force de fidélité et de patience, l'animal 
+							devint non seulement une légende, mais il bouleversa tous ceux qui connurent son histoire.
+						</p>
+						<p><a class="btn btn-primary btn-lg" href="#" role="button"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span> Editer</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<br/> <br/>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-2"></div>
+				<div class="Partie_bah col-md-8">
+					<p>
+						réalisé avec <span class="glyphicon glyphicon-heart">par <strong>Matthieu MOISSON</strong>
+					</p>
+				</div>
+				<div class="col-md-2"></div>
+			</div>
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="lib/bootstrap/js/bootstrap.min.js"></script>
+    </body>
+</html>
