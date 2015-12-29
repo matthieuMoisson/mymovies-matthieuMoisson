@@ -1,0 +1,34 @@
+.row {
+    margin-bottom: 15px;
+}
+* {
+    font-family: "Arial";
+}
+p{
+	font-size: large;
+	font-family: "Papyrus";
+}
+
+.image_film {
+	width: 100%;
+}
+
+h1 {
+	
+	font-weight: bold;
+	font-size: 3em;	
+}
+.Partie_bah{
+	text-align: center;
+	border-top: 1px solid red;
+}
+strong{
+	color: blue;
+	font-size:0.8em;
+}
+.Titre_admin{
+	text-align: center;
+}
+.resume_film {
+	text-align: justify; 
+}
