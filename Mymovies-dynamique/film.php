@@ -1,4 +1,3 @@
-<?php include("login.php"); ?>
 <!doctype html>
 <html>
     <head>
@@ -13,7 +12,6 @@
     <body>
 		<?php include("entete.php");?>
 		<?php
-			//Je n'arrive pas a recuperer la valeur et le mettre dans mon select
 			$valeur=(int)$_GET['id'];
 			$reponse_film=$bdd->query("SELECT * FROM movie where movie.mov_id='$valeur' ");
 			$donnees=$reponse_film->fetch();
@@ -37,13 +35,11 @@
 						<p>
 							<?php echo $donnees['mov_description_long']; ?>
 						</p>
-						<p><a class="btn btn-primary btn-lg" href="#" role="button"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span> Editer</a></p>
+						<p><a class="btn btn-primary btn-lg" href="edition.php?id=<?php echo $donnees['mov_id']?>" role="button"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span> Editer</a></p>
 					</div>
 				</div>
 			</div>
 		</div>
-		<br/> <br/>
-		<br/> <br/>
 		<?php include("pied.php"); ?>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 		<script src="lib/bootstrap/js/bootstrap.min.js"></script>

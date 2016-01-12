@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html>
     <head>
@@ -46,10 +45,14 @@
 									<td><?php echo $donnees['mov_director']; ?></td>
 									<td><?php echo $donnees['mov_year']; ?></td>
 									<td>
-										<button type="button" class="btn btn-xs btn-primary">
-											<span class="glyphicon glyphicon-edit" aria-hidden="true"></span>
-										</button>
-										<a href="delete.php?id=<?php echo $donnees['mov_id']?>">
+										<a href="edition.php?id=<?php echo $donnees['mov_id']?>">
+											<button type="button" class="btn btn-xs btn-primary">
+												<span class="glyphicon glyphicon-edit" aria-hidden="true"></span>
+											</button>
+										</a>
+										
+										
+										<a href="delete.php?id=<?php echo $donnees['mov_id']?>" onclick="return confirm('Supprimer?')">
 											<button type="button" class="btn btn-xs btn-danger">
 												<span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
 											</button>
