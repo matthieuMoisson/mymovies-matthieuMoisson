@@ -12,7 +12,7 @@
 	$dir=nettoyer($_POST["director"]);
 	$date=nettoyer($_POST["date"]);
 	$lien="images/".basename($_FILES["fichier_photo"]["name"]);
-	$bdd->exec("INSERT INTO movie(mov_id,mov_title,mov_description_short,mov_description_long,mov_director,mov_year,mov_image) VALUES(rand(100000000),'$title', '$s_desc','$l_desc','$dir','$date','$lien' )");
+	$bdd->exec("INSERT INTO movie(mov_title,mov_description_short,mov_description_long,mov_director,mov_year,mov_image) values('$title', '$s_desc','$l_desc','$dir','$date','$lien' )");
 	header("Location: index.php");
 	
 ?>
